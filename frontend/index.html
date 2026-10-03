@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saagithyan Food Delivery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h2>🍔 Saagithyan foodies</h2>
+    <input id="search" type="text" placeholder="Search food...">
+    <button onclick="showCart()">🛒 Cart (<span id="cart-count">0</span>)</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1>Delicious food, delivered to you!</h1>
+        <p>Order your favourite food from SaagiFoods.</p>
+        <a href="#menu" class="explore">Explore Menu</a>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <h2>Our Popular Foods</h2>
+      <div id="food-list" class="food-grid">
+        Loading food...
+      </div>
+    </section>
+
+    <section class="cart-section" id="cart">
+      <h2>Your Cart</h2>
+      <div id="cart-items">Your cart is empty.</div>
+      <h3>Total: ₹<span id="total">0</span></h3>
+      <input id="customer" type="text" placeholder="Enter your name">
+      <button class="order-btn" onclick="placeOrder()">Place Order</button>
+      <p id="message"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 SaagiFoods | Food Delivery App</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
